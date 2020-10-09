@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">child-education</string>
+
+
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Отмена</string>
+</resources>
