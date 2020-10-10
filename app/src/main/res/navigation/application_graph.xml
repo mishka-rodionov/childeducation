@@ -8,4 +8,12 @@
         android:id="@+id/startFragment"
         android:name="com.rodionov.child_education.presentation.start.StartFragment"
         android:label="StartFragment" />
+    <fragment
+        android:id="@+id/subjectSelectFragment"
+        android:name="com.rodionov.child_education.presentation.subject_select.SubjectSelectFragment"
+        android:label="SubjectSelectFragment" />
+    <fragment
+        android:id="@+id/mathFragment"
+        android:name="com.rodionov.child_education.presentation.math.MathFragment"
+        android:label="MathFragment" />
 </navigation>

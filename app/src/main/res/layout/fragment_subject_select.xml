@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/default_margin_24">
+
+    <Button
+        android:id="@+id/btnMath"
+        style="@style/Button"
+        android:layout_width="0dp"
+        android:text="@string/subject_math"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnRussian"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btnRussian"
+        style="@style/Button"
+        android:layout_width="0dp"
+        android:text="@string/subject_russian"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnReading"
+        app:layout_constraintTop_toBottomOf="@id/btnMath"/>
+
+    <Button
+        android:id="@+id/btnReading"
+        style="@style/Button"
+        android:layout_width="0dp"
+        android:text="@string/subject_reading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnNature"
+        app:layout_constraintTop_toBottomOf="@id/btnRussian"/>
+
+    <Button
+        android:id="@+id/btnNature"
+        style="@style/Button"
+        android:layout_width="0dp"
+        android:text="@string/subject_nature"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnReading"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

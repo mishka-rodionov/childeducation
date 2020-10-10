@@ -1,7 +1,11 @@
 <resources>
     <string name="app_name">child-education</string>
 
-
     <string name="btn_ok">OK</string>
     <string name="btn_cancel">Отмена</string>
+
+    <string name="subject_math">Математика</string>
+    <string name="subject_russian">Русский язык</string>
+    <string name="subject_reading">Чтение</string>
+    <string name="subject_nature">Окружающий мир</string>
 </resources>
