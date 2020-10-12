@@ -6,7 +6,9 @@ import android.text.SpannableStringBuilder
 import android.text.style.ForegroundColorSpan
 import android.text.style.UnderlineSpan
 import android.view.View
+import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputMethodManager
+import android.widget.EditText
 import android.widget.TextView
 import com.rodionov.child_education.R
 
@@ -44,4 +46,14 @@ fun TextView.setSpannablePrimaryText(primaryText: String, text: String, addSpace
         Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
     )
     setText(ssb)
+}
+
+fun EditText.onDone(callback: () -> Unit) {
+    setOnEditorActionListener { _, actionId, _ ->
+        if (actionId == EditorInfo.IME_ACTION_DONE) {
+            callback.invoke()
+            true
+        }
+        false
+    }
 }

@@ -4,8 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
-import ru.portal6400.golfstream.app.platform.Event
-import ru.portal6400.golfstream.app.platform.EventObserver
+import com.rodionov.child_education.app.platform.Event
+import com.rodionov.child_education.app.platform.EventObserver
 
 fun <T : Any?, L : LiveData<T>> Fragment.observe(liveData: L, body: (T?) -> Unit) =
     liveData.observe(viewLifecycleOwner, Observer(body))

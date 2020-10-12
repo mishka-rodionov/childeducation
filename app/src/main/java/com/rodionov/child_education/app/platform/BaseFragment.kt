@@ -99,6 +99,15 @@ abstract class BaseFragment(@LayoutRes private val contentLayoutId: Int) :
             val imm =
                 activity?.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager?
             imm?.hideSoftInputFromWindow(it.windowToken, 0)
+            imm?.showSoftInput(it, 0)
+        }
+    }
+
+    protected fun showSoftKeyboard() {
+        view?.let {
+            val imm =
+                activity?.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager?
+            imm?.showSoftInput(it, 0)
         }
     }
 
